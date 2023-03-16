@@ -1,1 +1,282 @@
-anet page
+<html lang="en" class="">
+
+<head>
+  <!-- Required meta tags -->
+  <title>ANetQA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="video, reasoning, physics, deep learning, computer vision, machine learning">
+  <meta name="description"
+    content="ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-81724582-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
+    gtag('config', 'UA-81724582-4');
+  </script>
+
+  <style>
+    body {
+      font-size: 16px
+    }
+
+    .navbar-fixed-top {
+      min-height: 60px;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 60px;
+      font-size: 22px;
+      color: gray;
+    }
+
+    .navbar-nav>li>a:active {
+      color: white;
+    }
+
+    .navbar-nav>li>a:hover {
+      color: white;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+      background: none;
+      text-decoration: none;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="jumbotron.css" rel="stylesheet">
+  <style>
+    hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__ {
+      border: 1px dotted
+    }
+  </style>
+</head>
+
+
+
+<body data-gr-c-s-loaded="true">
+  <nav class="navbar-fixed-top" style="background-color: rgb(44, 42, 42)">
+    <a class="navbar-brand" href="#" style="font-size: 25px; color:white">ANetQA</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="nav navbar-nav mr-auto">
+        <li><a href="#Paper" style="font-size: 20px">Paper</a></li>
+        <li><a href="#Dataset" style="font-size: 20px">Dataset</a></li>
+        <li><a href="#More" style="font-size: 20px">More</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main role="main">
+    <div class="container" style="padding-top: 80px; font-size: 20px">
+      <div align="center">
+        <h1 class="text-center" aligh="center">
+          ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos
+        </h1><br>
+
+        <b>Zhou Yu</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Lixiang Zheng</b></a> &nbsp;&nbsp;&nbsp; &nbsp;
+        <b>Zhou Zhao</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Fei Wu</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Jianping Fan</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+        <b>Kui Ren</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Jun Yu</b></a>
+
+        <br><br>
+      </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="container">
+      <h2 id="RFSleep" style="padding-top: 80px; margin-top: -80px;">Abstract:</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          Building benchmarks to systemically analyze different capabilities of video question answering (VideoQA)
+          models
+          is challenging yet crucial. Existing benchmarks often
+          use non-compositional simple questions and suffer from
+          language biases, making it difficult to diagnose model
+          weaknesses incisively. A recent benchmark AGQA [8] poses
+          a promising paradigm to generate QA pairs automatically
+          from pre-annotated scene graphs, enabling it to measure
+          diverse reasoning abilities with granular control. However,
+          its questions have limitations in reasoning about the finegrained
+          semantics in videos as such information is absent in
+          its scene graphs. To this end, we present ANetQA, a largescale
+          benchmark that supports fine-grained compositional
+          reasoning over the challenging untrimmed videos from
+          ActivityNet [4]. Similar to AGQA, the QA pairs in ANetQA
+          are automatically generated from annotated video scene
+          graphs. The fine-grained characteristics of ANetQA are
+          highlighted in the following: (i) untrimmed videos with
+          fine-grained semantics; (ii) spatio-temporal scene graphs
+          with fine-grained taxonomies; and (iii) diverse questions
+          generated from fine-grained templates. Benefiting from the
+          fine-grained properties described above, ANetQA attains
+          1.4 billion unbalanced and 13.0 million balanced QA pairs,
+          which is an order of magnitude larger than AGQA with a
+          similar number of videos. Comprehensive experiments and
+          intensive analyses are performed for state-of-the-art methods.
+          The best model achieves 44.1% accuracy while human
+          performance tops out at 83.8%, showing sufficient room for
+          future improvements. We will release this benchmark to
+          facilitate future research. </div>
+        <div style="margin-top: 280px">
+          <div class="col-md-10 col-md-offset-1">
+            <center>
+              <img class="img-responsive img-rounded" src="imgs/AnetQA_ex.png" alt="">
+            </center>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="container">
+        <h2 id="Paper" style="padding-top: 80px; margin-top: -80px;">Paper:</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <a href=""><b>
+                ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos
+              </b><br></a>
+
+            Zhou Yu, Lixiang Zheng, Zhou Zhao, Fei Wu, Jianping Fan, Kui Ren, Jun Yu <br>
+            <i> CVPR, 2023</i><br>
+            <a href="">[PDF]</a>
+          </div>
+        </div>
+      </div><br><br>
+
+
+      <!-- -->
+      <div class="container">
+        <h2 id="Dataset" style="padding-top: 80px; margin-top: -80px;">Dataset</h2>
+        <hr>
+        <h3>Videos</h3>
+        <div class="row">
+          <div class="col-md-9">
+            Download <a href="" class="download-link">ActivityNet Videos</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            Download <a href="" class="download-link">Videos List</a>
+          </div>
+        </div>
+
+        <hr>
+        <h3>AGQA benchmark</h3>
+        <div class="row">
+          <div class="col-md-9">
+            Download <a href="" class="download-link">Balanced ANetQA</a> with 13M questions(4.4G)
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <a href="">Readme</a>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <a href="">Evaluation Server</a>
+
+          </div>
+        </div>
+        <hr>
+        <h3>Code</h3>
+        <div class="row">
+          <div class="col-md-9">
+            Code is available <a href="">Here</a>
+
+          </div>
+        </div>
+      </div><br><br>
+
+
+
+      <div class="container">
+        <h2 id="More" style="padding-top: 80px; margin-top: -80px;">Related Publications</h2>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-9">
+            <b><a target="_blank" href="https://arxiv.org/abs/1906.02467">
+                <font color="black">ActivityNet-QA: A Dataset for Understanding Complex Web Videos via Question Answering
+                </font>
+              </a></b><br>
+              Zhou Yu, Dejing Xu, Jun Yu, Ting Yu, Zhou Zhao, Yueting Zhuang, Dacheng Tao
+              <br>
+            <i>AAAI 2019 </i><a href="https://arxiv.org/pdf/1906.02467.pdf">[pdf]</a><br>
+            
+          </div>
+        </div>
+
+        <!-- <br>
+
+        <div class="row">
+          <div class="col-md-9">
+            <b><a target="_blank" href="https://arxiv.org/pdf/1904.12584.pdf">
+                <font color="black">The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From
+                  Natural Supervision</font>
+              </a></b><br>
+            <a href="http://jiayuanm.com/">Jiayuan Mao</a>,
+            <a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a>,
+            <a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a>,
+            <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>, and
+            <a href="https://jiajunwu.com/">Jiajun Wu</a>
+
+            <br>
+            <i>ICLR, 2019</i><br>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-md-9">
+            <a target="_blank" href=""><b>
+                <font color="black">Neural Scene De-rendering</font>
+              </b></a>
+            <br>
+            <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+            <a href="http://cocosci.mit.edu/josh"> Joshua B. Tenenbaum</a>, and
+            <a href="https://sites.google.com/site/pushmeet/">Pushmeet Kohli</a>
+            <br>
+            <i>CVPR, 2017</i><br>
+          </div>
+        </div> -->
+
+      </div><br><br>
+
+    </div>
+  </main>
+
+
+
+
+</body>
+<div style="all: initial;">
+  <div id="__hcfy__" style="all: initial;"></div>
+</div>
+
+</html>
