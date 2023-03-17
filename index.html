@@ -54,11 +54,33 @@
       background: none;
       text-decoration: none;
     }
-    .logo1{
-      float: left;
-    }
-    .logo2{
+
+    .logo1 {
+      margin-top: 10px;
+      margin-right: 20px;
       float: right;
+    }
+
+    .logo2 {
+      margin-top: 10px;
+      margin-right: 20px;
+      float: right;
+    }
+
+    .img {
+      float:left
+    }
+    .img1 {
+      float:right
+    }
+
+    .sg {
+      margin-right: 30%;
+      float: right
+    }
+
+    .qa {
+      float: left
     }
   </style>
   <!-- Custom styles for this template -->
@@ -82,6 +104,14 @@
         <li><a href="#Dataset" style="font-size: 20px">Dataset</a></li>
         <li><a href="#More" style="font-size: 20px">More</a></li>
       </ul>
+      <div class="logo1">
+        <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="50"
+            width="50"></a>
+      </div>
+      <div class="logo2">
+        <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="50"
+            width="50"></a>
+      </div>
     </div>
   </nav>
 
@@ -89,28 +119,26 @@
   <main role="main">
 
     <div class="container" style="padding-top: 80px; font-size: 20px">
-      <div class="logo1">
-        <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="100" width="100"></a>
-      </div>
-      <div class="logo2">
-        <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="100" width="100"></a>
-      </div>
       <div align="center">
         <h1 class="text-center" aligh="center">
           ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos
         </h1><br>
-  
-  
-        <b>Zhou Yu</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <b>Lixiang Zheng</b></a> &nbsp;&nbsp;&nbsp; &nbsp;
-        <b>Zhou Zhao</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <b>Fei Wu</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <b>Jianping Fan</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <b>Zhou Yu<sup>1</sup></b> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Lixiang Zheng<sup>1</sup></b> &nbsp;&nbsp;&nbsp; &nbsp;
+        <b>Zhou Zhao<sup>2</sup></b> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Fei Wu<sup>2</sup></b> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Jianping Fan<sup>1,3</sup></b> &nbsp;&nbsp;&nbsp;&nbsp;
         <br>
-        <b>Kui Ren</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <b>Jun Yu</b></a>
+        <b>Kui Ren<sup>4</sup></b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Jun Yu<sup>1</sup></b></a>
 
         <br><br>
+        <sup>1</sup>School of Computer Science, Hangzhou Dianzi University, China<br>
+        <sup>2</sup>Colledge of Computer Science and Technology, Zhejiang University, China<br>
+        <sup>3</sup>AI Lab at Lenovo Research, China<br>
+        <sup>4</sup>School of Cyber Science and Technology, Zhejiang University, China
       </div>
 
     </div>
@@ -156,10 +184,10 @@
           future improvements. We will release this benchmark to
           facilitate future research. </div>
         <div style="margin-top: 20px">
-          <div class="col-md-10 col-md-offset-1">
-            <center>
-              <img class="img-responsive img-rounded" src="AnetQA_ex.png" alt="">
-            </center>
+          <!-- <div class="col-md-10 col-md-offset-1"> -->
+          <div>
+            <img class="img-responsive img-rounded img" src="AnetQA_ex.png" alt="" width="50%">
+            <img class="img-responsive img-rounded img" src="AnetQA_ex.png" alt="" width="50%">
           </div>
         </div>
       </div>
@@ -198,37 +226,40 @@
           </div>
         </div>
         <hr>
-        <h3>ANet Scene Graph</h3>
-        <h4>training</h4>
-        <div class="row">
-          <div class="col-md-9">
-            Download <a href="" class="download-link">Training Scene Graph</a>
+        <div class="sg">
+          <h3>ANet Scene Graph</h3>
+          <h4>training</h4>
+          <div class="row">
+            <div class="col-md-9">
+              Download <a href="" class="download-link">Training Scene Graph</a>
+            </div>
+          </div>
+          <h4>validation</h4>
+          <div class="row">
+            <div class="col-md-9">
+              Download <a href="" class="download-link">Validation Scene Graph</a>
+            </div>
           </div>
         </div>
-        <h4>validation</h4>
-        <div class="row">
-          <div class="col-md-9">
-            Download <a href="" class="download-link">Validation Scene Graph</a>
+        <div class="qa">
+          <h3>ANetQA benchmark</h3>
+          <h4>training</h4>
+          <div class="row">
+            <div class="col-md-9">
+              Download <a href="" class="download-link">Training Balanced ANetQA</a> with 11M questions-answer pairs
+            </div>
           </div>
-        </div>
-        <hr>
-        <h3>ANetQA benchmark</h3>
-        <h4>training</h4>
-        <div class="row">
-          <div class="col-md-9">
-            Download <a href="" class="download-link">Training Balanced ANetQA</a> with 11M questions-answer pairs
+          <h4>validation</h4>
+          <div class="row">
+            <div class="col-md-9">
+              Download <a href="" class="download-link">Validation Balanced ANetQA</a> with 1.3M questions-answer pairs
+            </div>
           </div>
-        </div>
-        <h4>validation</h4>
-        <div class="row">
-          <div class="col-md-9">
-            Download <a href="" class="download-link">Validation Balanced ANetQA</a> with 1.3M questions-answer pairs
-          </div>
-        </div>
-        <h4>testing</h4>
-        <div class="row">
-          <div class="col-md-9">
-            Download <a href="" class="download-link">Testing Balanced ANetQA</a> with 1.3M questions
+          <h4>testing</h4>
+          <div class="row">
+            <div class="col-md-9">
+              Download <a href="" class="download-link">Testing Balanced ANetQA</a> with 1.3M questions
+            </div>
           </div>
         </div>
         <div class="row">
@@ -261,9 +292,9 @@
 
         <div class="row">
           <pre style="font-size:12px;">
-@inproceedings{Yu2023ANetQA,
+@inproceedings{yu2023anetqa,
 title={ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos},
-author={Zhou Yu, Lixiang Zheng, Zhou Zhao, Fei Wu, Jianping Fan, Kui Ren, Jun Yu},
+author={Yu Zhou, ZhengLixiang, Zhao Zhou, Wu Fei, Fan Jianping, Ren Kui, Yu Jun},
 booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
 year={2023}
 }</pre>
