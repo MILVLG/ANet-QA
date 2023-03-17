@@ -54,28 +54,32 @@
       background: none;
       text-decoration: none;
     }
-
+    .col-md-13{
+      display: inline-block;
+      text-align: justify;
+   }
     .logo1 {
-      margin-top: 10px;
-      margin-right: 20px;
+      margin-top: 60px;
+      margin-right: 30px;
       float: right;
     }
 
     .logo2 {
-      margin-top: 10px;
-      margin-right: 20px;
+      margin-top: 60px;
+      margin-right: 30px;
       float: right;
     }
 
-    .img {
-      float:left
-    }
     .img1 {
-      float:right
+      float: left
+    }
+
+    .img2 {
+      float: left
     }
 
     .sg {
-      margin-right: 30%;
+      margin-right: 20%;
       float: right
     }
 
@@ -96,7 +100,7 @@
 
 <body data-gr-c-s-loaded="true">
   <nav class="navbar-fixed-top" style="background-color: rgb(44, 42, 42)">
-    <a class="navbar-brand" href="#" style="font-size: 25px; color:white">ANetQA</a>
+    <a class="navbar-brand" href="#" style="font-size: 25px; color:white;line-height: 100%;">ANetQA</a>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="nav navbar-nav mr-auto">
@@ -104,20 +108,18 @@
         <li><a href="#Dataset" style="font-size: 20px">Dataset</a></li>
         <li><a href="#More" style="font-size: 20px">More</a></li>
       </ul>
-      <div class="logo1">
-        <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="50"
-            width="50"></a>
-      </div>
-      <div class="logo2">
-        <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="50"
-            width="50"></a>
-      </div>
     </div>
   </nav>
 
-
+  <div class="logo1">
+    <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="75"
+        width="75"></a>
+  </div>
+  <div class="logo2">
+    <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="75"
+        width="75"></a>
+  </div>
   <main role="main">
-
     <div class="container" style="padding-top: 80px; font-size: 20px">
       <div align="center">
         <h1 class="text-center" aligh="center">
@@ -135,23 +137,20 @@
         <b>Jun Yu<sup>1</sup></b></a>
 
         <br><br>
-        <sup>1</sup>School of Computer Science, Hangzhou Dianzi University, China<br>
-        <sup>2</sup>Colledge of Computer Science and Technology, Zhejiang University, China<br>
-        <sup>3</sup>AI Lab at Lenovo Research, China<br>
-        <sup>4</sup>School of Cyber Science and Technology, Zhejiang University, China
+        <h5><sup>1</sup>School of Computer Science, Hangzhou Dianzi University, China</h5>
+        <h5><sup>2</sup>Colledge of Computer Science and Technology, Zhejiang University, China</h5>
+        <h5><sup>3</sup>AI Lab at Lenovo Research, China</h5>
+        <h5><sup>4</sup>School of Cyber Science and Technology, Zhejiang University, China</h5>
       </div>
 
     </div>
-
     <br><br>
-
-
     <div class="container">
-      <h2 id="RFSleep" style="padding-top: 80px; margin-top: -80px;">Abstract:</h2>
+      <h2 id="RFSleep" style="padding-top: 80px; margin-top: -80px;">Abstract</h2>
       <hr>
       <div class="row">
         <!-- <div class="col-md-10 col-md-offset-1"> -->
-        <div class="col-md-13">
+        <div class="col-md-13" style="margin-left: 20px;margin-right: 20px;">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Building benchmarks to systemically analyze different
           capabilities of video question answering (VideoQA) models
@@ -185,9 +184,9 @@
           facilitate future research. </div>
         <div style="margin-top: 20px">
           <!-- <div class="col-md-10 col-md-offset-1"> -->
-          <div>
-            <img class="img-responsive img-rounded img" src="AnetQA_ex.png" alt="" width="50%">
-            <img class="img-responsive img-rounded img" src="AnetQA_ex.png" alt="" width="50%">
+          <div style="margin-left: 20px">
+            <img class="img-responsive img-rounded img1" src="AnetQA_ex.png" alt="" width="49%">
+            <img class="img-responsive img-rounded img2" src="AnetQA_ex.png" alt="" width="49%">
           </div>
         </div>
       </div>
@@ -227,51 +226,49 @@
         </div>
         <hr>
         <div class="sg">
-          <h3>ANet Scene Graph</h3>
+          <h3>Scene Graph</h3>
           <h4>training</h4>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               Download <a href="" class="download-link">Training Scene Graph</a>
             </div>
           </div>
           <h4>validation</h4>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               Download <a href="" class="download-link">Validation Scene Graph</a>
             </div>
           </div>
         </div>
         <div class="qa">
-          <h3>ANetQA benchmark</h3>
+          <h3>QA</h3>
           <h4>training</h4>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               Download <a href="" class="download-link">Training Balanced ANetQA</a> with 11M questions-answer pairs
             </div>
           </div>
           <h4>validation</h4>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               Download <a href="" class="download-link">Validation Balanced ANetQA</a> with 1.3M questions-answer pairs
             </div>
           </div>
           <h4>testing</h4>
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               Download <a href="" class="download-link">Testing Balanced ANetQA</a> with 1.3M questions
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-9" style="margin-top:20px">
             <a href="">Readme</a>
-
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top:20px">
           <div class="col-md-9">
             <a href="">Evaluation Server</a>
-
           </div>
         </div>
         <hr>
@@ -291,10 +288,10 @@
         <hr>
 
         <div class="row">
-          <pre style="font-size:12px;">
+          <pre style="font-size:12px;margin-left: 15px;margin-right: 15px;">
 @inproceedings{yu2023anetqa,
 title={ANetQA: A Large-scale Benchmark for Fine-grained Compositional Reasoning over Untrimmed Videos},
-author={Yu Zhou, ZhengLixiang, Zhao Zhou, Wu Fei, Fan Jianping, Ren Kui, Yu Jun},
+author={Yu, Zhou and Zheng, Lixiang and Zhao, Zhou and Wu, Fei and Fan, Jianping and Ren, Kui and Yu, Jun},
 booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
 year={2023}
 }</pre>
