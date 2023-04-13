@@ -34,8 +34,11 @@
       min-height: 60px;
     }
 
+    .navbar-nav{
+      margin-left: -20px;
+    }
     .navbar-nav>li>a {
-      padding-top: 0px;
+      padding-top: 10px;
       padding-bottom: 0px;
       line-height: 60px;
       font-size: 22px;
@@ -43,29 +46,47 @@
     }
 
     .navbar-nav>li>a:active {
-      color: white;
+      color: black;
     }
 
     .navbar-nav>li>a:hover {
-      color: white;
+      color: black;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       -webkit-tap-highlight-color: transparent;
       outline: none;
       background: none;
       text-decoration: none;
     }
-    .col-md-13{
+
+    .col-md-13 {
       display: inline-block;
       text-align: justify;
-   }
+    }
+
+    .anet_logo {
+      margin-top: -30px;
+      margin-right: 30px;
+      float: left;
+    }
+
+    .logo {
+      margin-top: -80px;
+      margin-right: 30px;
+      float: right;
+    }
+
     .logo1 {
-      margin-top: 100px;
       margin-right: 30px;
       float: right;
     }
 
     .logo2 {
-      margin-top: 100px;
+      margin-right: 30px;
+      float: right;
+    }
+
+    .logo3 {
+      margin-top: 20px;
       margin-right: 30px;
       float: right;
     }
@@ -99,9 +120,12 @@
 
 
 <body data-gr-c-s-loaded="true">
-  <nav class="navbar-fixed-top" style="background-color: rgb(44, 42, 42)">
-    <a class="navbar-brand" href="#" style="font-size: 25px; color:white;line-height: 100%;">ANetQA</a>
-
+  <nav class="navbar-fixed-top" style="background-color: rgb(255,255,255)">
+    <!-- <a class="navbar-brand" href="#" style="font-size: 25px; color:white;line-height: 100%;">ANetQA</a> -->
+    <div class="anet_logo">
+      <img src="logo.jpg" height="125" width="125">
+    </div>
+  
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="nav navbar-nav mr-auto">
         <li><a href="#Paper" style="font-size: 20px">Paper</a></li>
@@ -110,21 +134,30 @@
         <li><a href="#Eval" style="font-size: 20px">Evaluation</a></li>
       </ul>
     </div>
+    <div class="logo">
+      <div class="logo3">
+        <a href="https://research.lenovo.com/webapp/view/index.html"><img class="img-responsive img-rounded"
+            src="lenovo_logo.png" height="30" width="150"></a>
+      </div>
+      <div class="logo1">
+        <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="75"
+            width="75"></a>
+      </div>
+      <div class="logo2">
+        <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="75"
+            width="75"></a>
+      </div>
+    </div>
+  
   </nav>
 
-  <div class="logo1">
-    <a href="https://www.zju.edu.cn/"><img class="img-responsive img-rounded" src="zju_logo.png" height="75"
-        width="75"></a>
-  </div>
-  <div class="logo2">
-    <a href="https://www.hdu.edu.cn"><img class="img-responsive img-rounded" src="hdu_logo.jpg" height="75"
-        width="75"></a>
-  </div>
+
+
   <main role="main">
     <div class="container" style="padding-top: 80px; font-size: 20px">
       <div align="center">
         <h1 class="text-center" aligh="center">
-          ANetQA: A Large-scale Benchmark for Fine-grained 
+          ANetQA: A Large-scale Benchmark for Fine-grained
           <br>
           Compositional Reasoning over Untrimmed Videos
         </h1><br>
@@ -214,12 +247,15 @@
         <h3>Videos</h3>
         <div class="row">
           <div class="col-md-9">
-            <li>Raw videos from <a href="http://activity-net.org/download.html" class="download-link">ActivityNet v1.3</a></li>
+            <li>Raw videos from <a href="http://activity-net.org/download.html" class="download-link">ActivityNet
+                v1.3</a></li>
           </div>
         </div>
         <div class="row">
           <div class="col-md-9">
-            <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EYIaBMbntepBt2tiG7USPO8Byi3ap-MkltQNdtUh9vZ2_w?download=1" class="download-link">Meta information</a> of all videos.</li>
+            <li><a
+                href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EYIaBMbntepBt2tiG7USPO8Byi3ap-MkltQNdtUh9vZ2_w?download=1"
+                class="download-link">Meta information</a> of all videos.</li>
           </div>
         </div>
         <hr>
@@ -227,17 +263,23 @@
           <h3>Scene Graphs</h3>
           <div class="row">
             <div class="col-md-12">
-              <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/ESVPcVYJlXZAlD5IkD_9y80BYcsfpC7Gp9LJGfXJYqreSw?download=1" class="download-link">Training scene graphs</a> from 9,155 videos.</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/ESVPcVYJlXZAlD5IkD_9y80BYcsfpC7Gp9LJGfXJYqreSw?download=1"
+                  class="download-link">Training scene graphs</a> from 9,155 videos.</li>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/Ea2UrDyFRTNNisb3BtJj6eAB5uoI1A7ewXam7OesPpFqzg?download=1" class="download-link">Validation scene graphs</a> from 1,185 videos.</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/Ea2UrDyFRTNNisb3BtJj6eAB5uoI1A7ewXam7OesPpFqzg?download=1"
+                  class="download-link">Validation scene graphs</a> from 1,185 videos.</li>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/ESY5fUliVkZOo90ys6MdOGEBmKL8cpkV9kiwTKW0sAvsIQ?download=1" class="download-link">Meta information</a> of all scene graphs.</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/ESY5fUliVkZOo90ys6MdOGEBmKL8cpkV9kiwTKW0sAvsIQ?download=1"
+                  class="download-link">Meta information</a> of all scene graphs.</li>
             </div>
           </div>
         </div>
@@ -245,28 +287,35 @@
           <h3>Question-Answer Pairs</h3>
           <div class="row">
             <div class="col-md-12">
-              <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EbOk0tgkpZlIqwsW1yVq7PgB2jJUx0x0eCv5iu73hl--uQ?download=1" class="download-link">Training QA pairs</a> (10.4M)</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EbOk0tgkpZlIqwsW1yVq7PgB2jJUx0x0eCv5iu73hl--uQ?download=1"
+                  class="download-link">Training QA pairs</a> (10.4M)</li>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-             <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EckH2khIKF9PqX4lWwN2uJ0Bn_jA1Qvzv08Ny9jxEuzfWw?download=1" class="download-link">Validation QA pairs</a> (1.5M)</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EckH2khIKF9PqX4lWwN2uJ0Bn_jA1Qvzv08Ny9jxEuzfWw?download=1"
+                  class="download-link">Validation QA pairs</a> (1.5M)</li>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <li><a href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EdIUQBXaNXVMm8-Kmvg3gjcBHmnaeE5s4OP8OO5Ics7URA?download=1" class="download-link">Testing questions</a> (1.5M)</li>
+              <li><a
+                  href="https://awma1-my.sharepoint.com/:u:/g/personal/yuz_l0_tn/EdIUQBXaNXVMm8-Kmvg3gjcBHmnaeE5s4OP8OO5Ics7URA?download=1"
+                  class="download-link">Testing questions</a> (1.5M)</li>
             </div>
           </div>
         </div>
         <div class="row">
-          
+
           <div class="col-md-9" style="margin-top:20px">
-          More details of the dataset are provided <a href="https://github.com/MILVLG/anetqa-code/tree/main/dataset">here</a>.
+            More details of the dataset are provided <a
+              href="https://github.com/MILVLG/anetqa-code/tree/main/dataset">here</a>.
           </div>
         </div>
       </div><br><br>
-      
+
       <div class="container">
         <h2 id="Code" style="padding-top: 80px; margin-top: -80px;">Code</h2>
         <hr>
@@ -286,9 +335,9 @@
           </div>
         </div>
         <h3>Submit Format</h3>
-          <p style="font-size:15px; font-weight: 200; border-style: solid;
+        <p style="font-size:15px; font-weight: 200; border-style: solid;
           border-width: 1px; text-align:justify;">
-              <code style="background-color: #fff;">
+          <code style="background-color: #fff;">
                 [...<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;{<br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"question_id": question_id,<br>
@@ -296,9 +345,10 @@
                   &nbsp;&nbsp;&nbsp;&nbsp;},<br>
               ...]
           </code>
-          </p>
-          We have provided an example result JSON file <a href="https://github.com/MILVLG/anetqa-code/blob/main/dataset/fake_res.json">here</a>.
-    </div><br><br>
+        </p>
+        We have provided an example result JSON file <a
+          href="https://github.com/MILVLG/anetqa-code/blob/main/dataset/fake_res.json">here</a>.
+      </div><br><br>
 
 
       <div class="container">
@@ -313,7 +363,7 @@
 &nbsp;&nbsp;&nbsp;booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
 &nbsp;&nbsp;&nbsp;year={2023}
 }</pre>
-        </div>  
+        </div>
       </div><br><br>
 
     </div>
